@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="scr/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weatherApp">
+      <header>
+        <form class="searchForm" id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              required
+              id="search-form-input"
+              class="searchFormInput"
+            />
+            <input type="submit" value="Search" class="searchFormButton" />
+        </form>
+      </header>
+      <main>
+        <div class="weatherAppData">
+          <div>
+            <h1 class="weatherAppCity" id="city">Paris</h1>
+            <p class="weatherAppDetails">
+              Sunday 19:30, Light rain
+              <br />
+              Humidity: <strong>40%</strong>, Wind: <strong>21km/h</strong>
+            </p>
+          </div>
+          <div class="weatherAppTempContainer">
+            <div class="weatherAppIcon">🌧</div>
+            <div class="weatherAppTempValue" id="temperature">21</div>
+            <div class="weatherAppUnit">°C</div>
+          </div>
+        </div>
+      </main>
+      <div class="weather-forecast">
+          <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Mon</div>
+              <div class="weather-forecast-icon">🌤️</div>
+              <div class="weather-forecast-temperatures">
+                  <div class="weather-forecast-temperature"><strong>15º</strong></div>
+                  <div class="weather-forecast-temperature">9º</div>
+              </div>
+          </div> <!-- Closing tag for Monday -->
+      
+          <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Tue</div>
+              <div class="weather-forecast-icon">🌤️</div>
+              <div class="weather-forecast-temperatures">
+                  <div class="weather-forecast-temperature"><strong>15º</strong></div>
+                  <div class="weather-forecast-temperature">9º</div>
+              </div>
+          </div> <!-- Closing tag for Tuesday -->
+      
+          <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Wed</div>
+              <div class="weather-forecast-icon">🌤️</div>
+              <div class="weather-forecast-temperatures">
+                  <div class="weather-forecast-temperature"><strong>15º</strong></div>
+                  <div class="weather-forecast-temperature">9º</div>
+              </div>
+          </div> <!-- Closing tag for Wednesday -->
+      
+          <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Thu</div>
+              <div class="weather-forecast-icon">🌤️</div>
+              <div class="weather-forecast-temperatures">
+                  <div class="weather-forecast-temperature"><strong>15º</strong></div>
+                  <div class="weather-forecast-temperature">9º</div>
+              </div>
+          </div> <!-- Closing tag for Thursday -->
+      
+          <div class="weather-forecast-day">
+              <div class="weather-forecast-date">Fri</div>
+              <div class="weather-forecast-icon">🌤️</div>
+              <div class="weather-forecast-temperatures">
+                  <div class="weather-forecast-temperature"><strong>15º</strong></div>
+                  <div class="weather-forecast-temperature">9º</div>
+              </div>
+          </div> <!-- Closing tag for Friday -->
+      </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/malecanclini" target="_blank"> Alejandra Canclini</a>, code hosted on
+        <a href="https://github.com/malecanclini/meteo" target="_blank"> Github</a> and website hosted on 
+        <a href="https://meteo-shecodes-app-canclini.netlify.app/" target="_blank"> Netlify </a>
+      </footer>
+      <script src="scr/app.js"></script>
+    </div>
+  </body>
+</html>
